@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>ZIRO WEBSITE</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div id="notify" class="notify"></div>
+
+
+<div class="container">
+
+
+
+<!-- CENTER LOGO + TITLE -->
+
+<div class="logo-box">
+
+<img src="images/logo.png" class="logo">
+
+<h1>ZIRO WEBSITE</h1>
+
+</div>
+
+
+
+
+
+<!-- OPTION BOXES -->
+
+
+<div class="neon-box">
+
+<h2>🔥 REGEDIT</h2>
+
+<p>
+Premium Regedit<br>
+Section
+</p>
+
+<button onclick="downloadRegedit()">
+DOWNLOAD REGEDIT
+</button>
+
+</div>
+
+
+
+
+
+<div class="neon-box">
+
+<h2>🖼 WALLPAPERS</h2>
+
+<p>
+HD Wallpaper<br>
+Collection
+</p>
+
+<button onclick="downloadWallpaper()">
+DOWNLOAD
+</button>
+
+</div>
+
+
+
+
+
+<div class="neon-box">
+
+<h2>⚡ GET POTATO</h2>
+
+<p>
+Graphics Pack
+</p>
+
+<button onclick="potato()">
+GET NOW
+</button>
+
+</div>
+
+
+
+
+
+<div class="neon-box">
+
+<h2>💬 DISCORD</h2>
+
+<p>
+Join Discord
+</p>
+
+<button onclick="discord()">
+JOIN
+</button>
+
+</div>
+
+
+
+
+
+<div class="neon-box">
+
+<h2>▶ YOUTUBE</h2>
+
+<p>
+ZIRO MINNU
+</p>
+
+<button onclick="youtube()">
+SUBSCRIBE
+</button>
+
+</div>
+
+
+
+
+
+<div class="neon-box">
+
+<h2>📱 WHATSAPP</h2>
+
+<p>
+Contact Us
+</p>
+
+<button onclick="whatsapp()">
+CHAT
+</button>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+
+
+function downloadRegedit(){
+
+window.location.href="files/regedit.rar";
+
+}
+
+
+
+
+function downloadWallpaper(){
+
+window.location.href="files/wallpaper.rar";
+
+}
+
+
+
+
+function potato(){
+
+
+let box=document.getElementById("notify");
+
+
+box.innerHTML=
+"⚡ GET POTATO GRAPHICS<br><br>Price : Rs.300/=<br>WhatsApp : 078 928 8998";
+
+
+box.style.display="block";
+
+
+setTimeout(()=>{
+
+box.style.display="none";
+
+},5000);
+
+
+}
+
+
+
+
+function discord(){
+
+window.open(
+"https://discord.gg/",
+"_blank"
+);
+
+}
+
+
+
+
+function youtube(){
+
+window.open(
+"https://www.youtube.com/@zirominnu",
+"_blank"
+);
+
+}
+
+
+
+
+function whatsapp(){
+
+window.open(
+"https://chat.whatsapp.com/Bgqtn2AAogb89F7bWk4HjW",
+"_blank"
+);
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

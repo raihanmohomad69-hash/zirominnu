@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>ZIRO LOGIN</title>
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+
+
+<body>
+
+
+<div class="login-box">
+
+
+<img src="images/logo.png" class="login-logo">
+
+
+<h1>ZIRO LOGIN</h1>
+
+
+
+<input 
+type="text" 
+id="username" 
+placeholder="Username">
+
+
+
+<input 
+type="password" 
+id="password" 
+placeholder="Password">
+
+
+
+<button onclick="login()">
+LOGIN
+</button>
+
+
+
+
+<div class="register-link">
+
+<p>
+Don't have an account?
+</p>
+
+
+<button onclick="registerPage()">
+REGISTER
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<audio id="successSound">
+
+<source src="sound/success.mp3" type="audio/mp3">
+
+</audio>
+
+
+
+
+
+<script>
+
+
+function login(){
+
+
+let username =
+document.getElementById("username").value;
+
+
+let password =
+document.getElementById("password").value;
+
+
+
+let savedUsername =
+localStorage.getItem("username");
+
+
+let savedPassword =
+localStorage.getItem("password");
+
+
+
+
+
+if(username === savedUsername && password === savedPassword){
+
+
+
+let sound =
+document.getElementById("successSound");
+
+
+
+sound.play();
+
+
+
+
+alert("Activation Successfully!");
+
+
+
+
+
+setTimeout(function(){
+
+
+window.location.href="index.html";
+
+
+},1000);
+
+
+
+}
+
+
+
+else{
+
+
+alert("Wrong Username or Password");
+
+
+}
+
+
+
+}
+
+
+
+
+function registerPage(){
+
+
+window.location.href="register.html";
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

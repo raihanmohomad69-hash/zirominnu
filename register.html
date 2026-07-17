@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>ZIRO REGISTER</title>
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+
+
+<body>
+
+
+<div class="login-box">
+
+
+<img src="images/logo.png" class="login-logo">
+
+
+<h1>REGISTER</h1>
+
+
+
+<input id="regUser" placeholder="Username">
+
+
+<input id="regPass" type="password" placeholder="Password">
+
+
+<button onclick="register()">
+REGISTER
+</button>
+
+
+
+<div class="register-link">
+
+<p>Already have account?</p>
+
+<button onclick="loginPage()">
+LOGIN
+</button>
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+function register(){
+
+
+let user =
+document.getElementById("regUser").value;
+
+
+let pass =
+document.getElementById("regPass").value;
+
+
+
+if(user=="" || pass==""){
+
+
+alert("Fill all details");
+
+return;
+
+
+}
+
+
+
+localStorage.setItem("username",user);
+
+localStorage.setItem("password",pass);
+
+
+
+alert("Register Successfully!");
+
+
+window.location.href="login.html";
+
+
+}
+
+
+
+
+function loginPage(){
+
+window.location.href="login.html";
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
